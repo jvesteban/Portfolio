@@ -1,0 +1,62 @@
+﻿/* UniPortfolio Register Page Dedicated Styles */
+
+body.platform-body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Brand Icon Box */
+.brand-icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 8px 16px rgba(79, 70, 229, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.brand-icon-box:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+/* Card Container & Shadows */
+.card {
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Micro-Interactions */
+.btn-accent {
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-accent:hover {
+    background-color: #4338ca;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+}
+
+/* Input Focus Glow & Icon Highlights */
+.form-control:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+}
+
+.input-group:focus-within .input-group-text {
+    border-color: #6366f1;
+    background-color: #eef2ff !important;
+    color: #4f46e5 !important;
+}

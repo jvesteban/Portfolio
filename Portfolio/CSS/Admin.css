@@ -1,0 +1,113 @@
+﻿/* UniPortfolio Enterprise Admin Dashboard Styles & Animations */
+
+body.platform-body {
+    background-color: #f1f5f9;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.bg-dark-custom {
+    background-color: #0b0f19 !important;
+}
+
+.brand-icon-box {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-icon-box {
+    transform: rotate(10deg) scale(1.08);
+}
+
+.text-accent {
+    color: #38bdf8;
+}
+
+/* Dashboard Stat Cards & Charts Styling */
+.card {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 24px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
+}
+
+.card .fs-4 i {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .fs-4 i {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+/* Chart Container Responsiveness */
+canvas {
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Enhanced GridView Table Directory Styling */
+.table-responsive {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table {
+    color: #334155;
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    color: #64748b;
+    background-color: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 0.85rem 1rem;
+}
+
+.table td {
+    vertical-align: middle;
+    font-size: 0.875rem;
+    padding: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background-color 0.2s ease;
+}
+
+.table-hover tbody tr {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Status Indicator Pulse Animation */
+.status-pulse {
+    animation: statusPulse 2s infinite ease-in-out;
+}
+
+@keyframes statusPulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+}
